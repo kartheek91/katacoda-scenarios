@@ -1,0 +1,2 @@
+*uname*  is a command-line utility that prints basic information about the operating system name and system hardware.
+*syntax* :uname
