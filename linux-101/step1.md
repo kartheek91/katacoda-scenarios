@@ -27,4 +27,4 @@ This command is Used to show the manual of any command present in Linux.
 ```
 kartheek@SAILS-DM87:~$ man echo
 ```
-![Alt text](https://github.com/kartheek91/katacoda-scenarios/blob/main/linux-101/images/man.png "Output of man echo")
+![Output of echo man](https://github.com/kartheek91/katacoda-scenarios/blob/main/linux-101/images/man.png "Output of man echo")
