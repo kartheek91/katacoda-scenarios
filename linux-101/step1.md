@@ -79,6 +79,7 @@ kartheek@SAILS-DM87:/$
 ### 7. mkdir: This command in Linux allows the user to create directories (also referred to as folders in some operating systems).
 
 - How to create directories using mkdir?
+
 ```
 kartheek@SAILS-DM87:~$ mkdir -v test
 mkdir: created directory 'test'
@@ -87,6 +88,7 @@ abc.txt  sample.txt  test
 kartheek@SAILS-DM87:~$                                                                                       ```
 
 - How to make sure parent directories (if non-existent) are created in process?
+
 ```
 kartheek@SAILS-DM87:~$ mkdir -p -v gsdd/medguides && touch gsdd/medguides/lasix.txt
 mkdir: created directory 'gsdd'
