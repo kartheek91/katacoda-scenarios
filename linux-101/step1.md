@@ -22,3 +22,9 @@ This command displays the username of the current user when this command is invo
 kartheek@SAILS-DM87:~$ whoami
 kartheek
 ```
+### 4. man: 
+This command is Used to show the manual of any command present in Linux.
+```
+kartheek@SAILS-DM87:~$ man echo
+```
+![Alt text](D:\Sails Projects\katacoda-scenarios\linux-101\images "Output of man echo")
