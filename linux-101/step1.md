@@ -76,3 +76,23 @@ kartheek@SAILS-DM87:/$ pwd
 /
 kartheek@SAILS-DM87:/$    
 ```
+### 7. mkdir: This command in Linux allows the user to create directories (also referred to as folders in some operating systems).
+
+- How to create directories using mkdir?
+```
+kartheek@SAILS-DM87:~$ mkdir -v test
+mkdir: created directory 'test'
+kartheek@SAILS-DM87:~$ ls
+abc.txt  sample.txt  test
+kartheek@SAILS-DM87:~$                                                                                                                               
+```
+- How to make sure parent directories (if non-existent) are created in process?
+```
+kartheek@SAILS-DM87:~$ mkdir -p -v gsdd/medguides && touch gsdd/medguides/lasix.txt
+mkdir: created directory 'gsdd'
+mkdir: created directory 'gsdd/medguides'
+kartheek@SAILS-DM87:~$ cd gsdd/medguides/
+kartheek@SAILS-DM87:~/gsdd/medguides$ ls
+lasix.txt
+kartheek@SAILS-DM87:~/gsdd/medguides$    
+```
