@@ -98,3 +98,14 @@ kartheek@SAILS-DM87:~/gsdd/medguides$ ls
 lasix.txt
 kartheek@SAILS-DM87:~/gsdd/medguides$    
 ```
+### 8. rmdir: It is a command-line utility for deleting empty directories. It is useful when you want to delete a directory only if it is empty, without needing to check whether the directory is empty or not.
+```
+kartheek@SAILS-DM87:~$ cd test/
+kartheek@SAILS-DM87:~/test$ ls -ltr
+total 0
+kartheek@SAILS-DM87:~/test$ cd ../
+kartheek@SAILS-DM87:~$ rmdir test/
+kartheek@SAILS-DM87:~$ ls
+abc.txt  gsdd  sample.txt
+kartheek@SAILS-DM87:~$   
+```
