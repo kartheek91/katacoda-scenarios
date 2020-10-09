@@ -90,7 +90,7 @@ kartheek@SAILS-DM87:~$                                                          
 - How to make sure parent directories (if non-existent) are created in process?
 
 ```
-kartheek@SAILS-DM87:~$ mkdir -p -v gsdd/medguides && touch gsdd/medguides/lasix.txt
+kartheek@SAILS-DM87:~$ "mkdir -p -v gsdd/medguides && touch gsdd/medguides/lasix.txt"
 mkdir: created directory 'gsdd'
 mkdir: created directory 'gsdd/medguides'
 kartheek@SAILS-DM87:~$ cd gsdd/medguides/
