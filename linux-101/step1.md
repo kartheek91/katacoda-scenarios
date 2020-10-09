@@ -28,3 +28,19 @@ This command is Used to show the manual of any command present in Linux.
 kartheek@SAILS-DM87:~$ man echo
 ```
 ![Output of echo man](https://github.com/kartheek91/katacoda-scenarios/blob/main/linux-101/images/man.png)
+
+### 4. ls: 
+This command is Used to List Directory Contents, option  [a] = do not ignore entries starting with dot.
+
+```
+kartheek@SAILS-DM87:~$ ls
+abc.txt  sample.txt  test
+kartheek@SAILS-DM87:~$  
+```
+```
+kartheek@SAILS-DM87:~$ ls -a
+.              .bash_logout  .landscape   .oh-my-zsh  .sample.txt                .viminfo    abc.txt
+..             .bashrc       .local       .p10k.zsh   .shell.pre-oh-my-zsh       .zshrc      sample.txt
+.bash_history  .gem          .motd_shown  .profile    .sudo_as_admin_successful  .zshrc.swp  test
+kartheek@SAILS-DM87:~$    
+```
