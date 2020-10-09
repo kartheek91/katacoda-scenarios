@@ -85,9 +85,9 @@ kartheek@SAILS-DM87:~$ mkdir -v test
 mkdir: created directory 'test'
 kartheek@SAILS-DM87:~$ ls
 abc.txt  sample.txt  test
-kartheek@SAILS-DM87:~$                                                                                       ```
-
-- How to make sure parent directories (if non-existent) are created in process?
+kartheek@SAILS-DM87:~$                                                                                       
+```
+-  How to make sure parent directories (if non-existent) are created in process?
 
 ```
 kartheek@SAILS-DM87:~$ "mkdir -p -v gsdd/medguides && touch gsdd/medguides/lasix.txt"
