@@ -43,3 +43,10 @@ kartheek@SAILS-DM87:~$ ls -a
 .bash_history  .gem          .motd_shown  .profile    .sudo_as_admin_successful  .zshrc.swp  test
 kartheek@SAILS-DM87:~$    
 ```
+### 5. pwd: 
+This command is Used to Print Working Directory.
+```
+kartheek@SAILS-DM87:~$ pwd
+/home/kartheek
+kartheek@SAILS-DM87:~$    
+```
