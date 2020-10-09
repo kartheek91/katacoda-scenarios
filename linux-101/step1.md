@@ -50,3 +50,23 @@ kartheek@SAILS-DM87:~$ pwd
 /home/kartheek
 kartheek@SAILS-DM87:~$    
 ```
+
+### 6. cd: Stands for Change Directory.
+- To navigate into the root directory, use "cd /"
+- To navigate to your home directory, use "cd" or "cd ~"
+- To navigate up one directory level, use "cd .."
+- To navigate to the previous directory (or back), use "cd -"
+```
+kartheek@SAILS-DM87:~$ cd test/
+kartheek@SAILS-DM87:~/test$ pwd
+/home/kartheek/test
+kartheek@SAILS-DM87:~/test$ cd ..
+kartheek@SAILS-DM87:~$ pwd
+/home/kartheek
+kartheek@SAILS-DM87:~$ cd -
+/home/kartheek/test
+kartheek@SAILS-DM87:~/test$ cd /
+kartheek@SAILS-DM87:/$ pwd
+/
+kartheek@SAILS-DM87:/$    
+```
