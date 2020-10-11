@@ -122,7 +122,7 @@ abc.txt  gsdd  sample.txt
 kartheek@SAILS-DM87:~$ 
 ```
 ### 9.File creation in ubuntu:
-### touch: If the file name specified as an argument doesn’t exist touch will create a new file.
+### 9.1 touch: If the file name specified as an argument doesn’t exist touch will create a new file.
 ```
 kartheek@SAILS-DM87:~$ touch file1.txt
 kartheek@SAILS-DM87:~$ ls
@@ -133,13 +133,23 @@ file1.txt  file2.txt  file3.txt  gsdd
 kartheek@SAILS-DM87:~$  
 ```
 
-### 10.touch: If the file name specified as an argument doesn’t exist touch will create a new file.
+### 9.2 Redirection allows you to capture the output from a command and send it as input to another command or file. There are two ways to redirect output to a file. The > operator will overwrite an existing file, while the >> operator will append the output to the file.
 ```
-kartheek@SAILS-DM87:~$ touch file1.txt
-kartheek@SAILS-DM87:~$ ls
-file1.txt  gsdd
-kartheek@SAILS-DM87:~$ touch file2.txt file3.txt
-kartheek@SAILS-DM87:~$ ls
-file1.txt  file2.txt  file3.txt  gsdd
-kartheek@SAILS-DM87:~$  
+kartheek@SAILS-DM87:~$ echo "Hello from Redirection" > redirection_file.txt
+kartheek@SAILS-DM87:~$ cat redirection_file.txt
+Hello from Redirection
+kartheek@SAILS-DM87:~$ echo "Hello from Redirection1" > redirection_file.txt
+kartheek@SAILS-DM87:~$ cat redirection_file.txt
+Hello from Redirection1
 ```
+
+### In the above mentioned snippet we created a file with sample text i.e "Hello from Redirection" and with  redirection operator ">" .
+
+```
+kartheek@SAILS-DM87:~$ echo "Hello from Redirection Operator >>" >> redirection_file.txt
+kartheek@SAILS-DM87:~$ cat redirection_file.txt
+Hello from Redirection1
+Hello from Redirection Operator >>
+```
+
+### In the above mentioned snippet we append output to the file "redirection_file.txt".
