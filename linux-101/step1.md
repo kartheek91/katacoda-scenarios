@@ -121,3 +121,25 @@ kartheek@SAILS-DM87:~$ ls
 abc.txt  gsdd  sample.txt
 kartheek@SAILS-DM87:~$ 
 ```
+### 9.File creation in ubuntu:
+### touch: If the file name specified as an argument doesn’t exist touch will create a new file.
+```
+kartheek@SAILS-DM87:~$ touch file1.txt
+kartheek@SAILS-DM87:~$ ls
+file1.txt  gsdd
+kartheek@SAILS-DM87:~$ touch file2.txt file3.txt
+kartheek@SAILS-DM87:~$ ls
+file1.txt  file2.txt  file3.txt  gsdd
+kartheek@SAILS-DM87:~$  
+```
+
+### 10.touch: If the file name specified as an argument doesn’t exist touch will create a new file.
+```
+kartheek@SAILS-DM87:~$ touch file1.txt
+kartheek@SAILS-DM87:~$ ls
+file1.txt  gsdd
+kartheek@SAILS-DM87:~$ touch file2.txt file3.txt
+kartheek@SAILS-DM87:~$ ls
+file1.txt  file2.txt  file3.txt  gsdd
+kartheek@SAILS-DM87:~$  
+```
