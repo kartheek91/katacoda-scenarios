@@ -153,3 +153,14 @@ Hello from Redirection Operator >>
 ```
 
 ### In the above mentioned snippet we append output to the file "redirection_file.txt".
+
+### 9.3 Creating a File using Heredoc : Here document or Heredoc is a type of redirection that allows you to pass multiple lines of input to a command.
+```
+kartheek@SAILS-DM87:~$ cat << END
+> Hi All hope you are able to follow this session.
+> Thanks $(cat file3.txt) for this oppurtunity.
+> END
+Hi All hope you are able to follow this session.
+Thanks Kiran Sangita  for this oppurtunity.
+kartheek@SAILS-DM87:~$ 
+```
