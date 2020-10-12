@@ -158,9 +158,42 @@ Hello from Redirection Operator >>
 ```
 kartheek@SAILS-DM87:~$ cat << END
 > Hi All hope you are able to follow this session.
-> Thanks $(cat file3.txt) for this oppurtunity.
+> Thank You all for this oppurtunity.
 > END
 Hi All hope you are able to follow this session.
-Thanks Kiran Sangita  for this oppurtunity.
-kartheek@SAILS-DM87:~$ 
+Thank You all for this oppurtunity.
+kartheek@SAILS-DM87:~$
+```
+### 10.File copy in ubuntu:
+### 10.1 Copy file to target directory: We created two directories called source and destination and we will try to copy file from source -> destination.
+```
+kartheek@SAILS-DM87:~$ cp source/sampl1.txt  /home/kartheek/destination/
+kartheek@SAILS-DM87:~$ ls /home/kartheek/destination/
+sampl1.txt
+kartheek@SAILS-DM87:~$     
+```
+### 10.2 Copy multiple files at the same time
+```
+kartheek@SAILS-DM87:~$ ls
+clear.save  destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
+kartheek@SAILS-DM87:~$ cp source/sampl1.txt  source/sampl2.txt  /home/kartheek/destination/
+kartheek@SAILS-DM87:~$ ls /home/kartheek/destination/
+sampl1.txt  sampl2.txt
+kartheek@SAILS-DM87:~$    
+```
+### 10.3 Copying a directory or folder (-r or -R)
+```
+kartheek@SAILS-DM87:~$ ls
+clear.save  destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
+kartheek@SAILS-DM87:~$ cp gsdd/ /home/kartheek/source/
+cp: -r not specified; omitting directory 'gsdd/'
+```
+```
+kartheek@SAILS-DM87:~$ cp -R gsdd/ /home/kartheek/source/
+kartheek@SAILS-DM87:~$ ls -l /home/kartheek/source/
+total 0
+drwxr-xr-x 1 kartheek kartheek 4096 Oct 12 19:01 gsdd
+-rw-r--r-- 1 kartheek kartheek   19 Oct 12 18:44 sampl1.txt
+-rw-r--r-- 1 kartheek kartheek    0 Oct 12 18:39 sampl2.txt
+kartheek@SAILS-DM87:~$    
 ```
