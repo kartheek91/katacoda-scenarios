@@ -197,3 +197,61 @@ drwxr-xr-x 1 kartheek kartheek 4096 Oct 12 19:01 gsdd
 -rw-r--r-- 1 kartheek kartheek    0 Oct 12 18:39 sampl2.txt
 kartheek@SAILS-DM87:~$    
 ```
+### 10.4 Copy only when source file is newer than the target file (-u)
+```
+kartheek@SAILS-DM87:~$ cd source/
+kartheek@SAILS-DM87:~/source$ cat <<END >> sampl1.txt
+> Lasix is the generic drug
+> END
+```
+```
+kartheek@SAILS-DM87:~/source$ cp -v -u sampl1.txt /home/kartheek/destination/
+'sampl1.txt' -> '/home/kartheek/destination/sampl1.txt'
+kartheek@SAILS-DM87:~/source$  
+```
+```
+kartheek@SAILS-DM87:~/source$ cp -v -u sampl1.txt /home/kartheek/destination/
+kartheek@SAILS-DM87:~/source$ 
+```
+### 11.Ln Command: A symbolic link, also known as a symlink or soft link, is a special type of file that points to another file or directory.
+
+### Now we will create Symlink to a file: We have sample file in this location "/home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs" and we will create Symlink.
+
+```
+kartheek@SAILS-DM87:~$ ln -s /home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs/brand_drugs.txt  brand
+```
+### Now we will check whether Symlink for the mentioned file is created or not.
+
+```
+kartheek@SAILS-DM87:~$ ls -l brand
+lrwxrwxrwx 1 kartheek kartheek 98 Oct 12 20:10 brand -> /home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs/brand_drugs.txt
+kartheek@SAILS-DM87:~$  
+```
+
+```
+kartheek@SAILS-DM87:~$ ls
+brand  destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
+kartheek@SAILS-DM87:~$ cat brand
+This is sample file
+Symbolic link works fine
+kartheek@SAILS-DM87:~$
+```
+
+### In order to delete the Symlink we need to used this command
+
+```
+kartheek@SAILS-DM87:~$ ls
+brand  destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
+kartheek@SAILS-DM87:~$ unlink brand
+kartheek@SAILS-DM87:~$ ls
+destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
+kartheek@SAILS-DM87:~$
+```
+
+
+### Now we will create Symlink to a directory: We have sample directory in this location "/home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs" and we will create Symlink.
+
+
+
+
+
