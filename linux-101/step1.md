@@ -260,7 +260,12 @@ kartheek@SAILS-DM87:~/brand$ ls
 brand_drugs.txt
 ```
 
+### 12.tar command: A Linux tarball (“tar.gz” or “tar.bz2” file ) is nothing but a system file format that combines and compresses multiple files.
 
-
+### Here’s what those switches actually mean:
+- -c: Create an archive.
+- -z: Compress the archive with gzip.
+- -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
+- -f: Allows you to specify the filename of the archive.
 
 
