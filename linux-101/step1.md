@@ -268,4 +268,29 @@ brand_drugs.txt
 - -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
 - -f: Allows you to specify the filename of the archive.
 
+### Creating 150 MB random file and creating tar file.
+```
+kartheek@SAILS-DM87:~$ tar -czvf sample.tar.gz  first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleven
+th/
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample.txt
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample_tar.txt
+```
+### Extract the tar.gz file i.e sample.tar.gz
+
+```
+kartheek@SAILS-DM87:~$ ls -human sample.tar.gz
+-rw-r--r-- 1 1000 1000 144M Oct 12 21:54 sample.tar.gz
+kartheek@SAILS-DM87:~$ tar -zxvf sample.tar.gz
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample.txt
+first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample_tar.txt
+```
+
+```
+kartheek@SAILS-DM87:~$ ls
+brand        file1.txt  file3.txt  gsdd  redirection_file.txt  source
+destination  file2.txt  first      home  sample.tar.gz         twogb.txt
+kartheek@SAILS-DM87:~$  
+```
 
