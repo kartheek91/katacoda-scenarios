@@ -247,6 +247,18 @@ kartheek@SAILS-DM87:~$
 ```
 
 ### Now we will create Symlink to a directory: We have sample directory in this location "/home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs" and we will create Symlink.
+```
+kartheek@SAILS-DM87:~$ ln -s /home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs/ brand
+```
+```
+kartheek@SAILS-DM87:~$ ls -l brand
+lrwxrwxrwx 1 kartheek kartheek 83 Oct 12 20:16 brand -> /home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs/
+```
+```
+kartheek@SAILS-DM87:~$ cd brand
+kartheek@SAILS-DM87:~/brand$ ls
+brand_drugs.txt
+```
 
 
 
