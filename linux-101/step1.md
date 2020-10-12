@@ -1,4 +1,4 @@
-# Commands in Ubuntu
+# Hands-On Ubuntu
 We will learn some basic commands in order to get started with Linux environment.
 ### 1. echo: 
 This command is used to display line of text/string that are passed as an argument.
