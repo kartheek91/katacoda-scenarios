@@ -299,3 +299,68 @@ destination  file2.txt  first      home  sample.tar.gz         twogb.txt
 kartheek@SAILS-DM87:~$  
 ```
 
+### 13.zip a folder in Ubuntu Linux using the cli:To compress archive files use zip command. 
+
+```
+kartheek@SAILS-DM87:~$ sudo apt install zip unzip
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+zip is already the newest version (3.0-11build1).
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 117 not upgraded.
+Need to get 0 B/169 kB of archives.
+After this operation, 593 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Selecting previously unselected package unzip.
+(Reading database ... 84603 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-25ubuntu1_amd64.deb ...
+Unpacking unzip (6.0-25ubuntu1) ...
+Setting up unzip (6.0-25ubuntu1) ...
+Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+kartheek@SAILS-DM87:~$  
+```
+### To create compressed archive named first.zip of first folder in the current directory.
+
+```
+kartheek@SAILS-DM87:~$ zip -r first.zip first/
+  adding: first/ (stored 0%)
+  adding: first/second/ (stored 0%)
+  adding: first/second/third/ (stored 0%)
+  adding: first/second/third/fourth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/ (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample.txt (stored 0%)
+  adding: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample_tar.txt (deflated 0%)
+kartheek@SAILS-DM87:~$                                          
+```
+
+### Now we will unzip first.zip
+
+```
+kartheek@SAILS-DM87:~/source$ unzip first.zip
+Archive:  first.zip
+   creating: first/
+   creating: first/second/
+   creating: first/second/third/
+   creating: first/second/third/fourth/
+   creating: first/second/third/fourth/fifth/
+   creating: first/second/third/fourth/fifth/sixth/
+   creating: first/second/third/fourth/fifth/sixth/seventh/
+   creating: first/second/third/fourth/fifth/sixth/seventh/eighth/
+   creating: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/
+   creating: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/
+   creating: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/
+ extracting: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample.txt
+  inflating: first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleventh/sample_tar.txt
+kartheek@SAILS-DM87:~/source$ ls
+first  first.zip  gsdd  sampl1.txt  sampl2.txt
+kartheek@SAILS-DM87:~/source$     
+```
