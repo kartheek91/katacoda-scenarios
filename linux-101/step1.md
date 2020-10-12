@@ -268,7 +268,12 @@ brand_drugs.txt
 - -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
 - -f: Allows you to specify the filename of the archive.
 
-### Creating 150 MB random file and creating tar file.
+### Creating 150 MB random file. 
+```
+kartheek@SAILS-DM87:~$ head -c 150MB /dev/urandom > sample_tar.txt    
+```
+### Creating tar file.
+
 ```
 kartheek@SAILS-DM87:~$ tar -czvf sample.tar.gz  first/second/third/fourth/fifth/sixth/seventh/eighth/nineth/tenth/eleven
 th/
