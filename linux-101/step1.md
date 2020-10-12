@@ -376,16 +376,19 @@ kartheek@SAILS-DM87:~/source$
 kartheek@SAILS-DM87:~$ grep -c "road" road_not_taken.txt
 2
 ```
+
 ```
 kartheek@SAILS-DM87:~$ grep -o "road" road_not_taken.txt
 road
 road
 ```
+
 ```
 kartheek@SAILS-DM87:~$ grep -n "road" road_not_taken.txt
 1:Two roads diverged in a yellow wood,
 21:Two roads diverged in a wood, and I—
 ```
+
 ```
 kartheek@SAILS-DM87:~$ grep -h "road" road_not_taken.txt
 Two roads diverged in a yellow wood,
