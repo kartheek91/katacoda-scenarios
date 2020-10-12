@@ -394,6 +394,28 @@ kartheek@SAILS-DM87:~$ grep -h "road" road_not_taken.txt
 Two roads diverged in a yellow wood,
 Two roads diverged in a wood, and I—
 kartheek@SAILS-DM87:~$            
-```                            
+```
 
+### 15. wget: Wget is a command-line utility for downloading files from the web. With Wget, you can download files using HTTP, HTTPS, and FTP protocols.
+
+```
+kartheek@SAILS-DM87:~$ wget https://download.redis.io/releases/redis-6.0.8.tar.gz
+--2020-10-12 23:15:54--  https://download.redis.io/releases/redis-6.0.8.tar.gz
+Resolving download.redis.io (download.redis.io)... 45.60.125.1
+Connecting to download.redis.io (download.redis.io)|45.60.125.1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2247528 (2.1M) [application/octet-stream]
+Saving to: ‘redis-6.0.8.tar.gz’
+
+redis-6.0.8.tar.gz            100%[=================================================>]   2.14M   751KB/s    in 2.9s
+
+2020-10-12 23:15:59 (751 KB/s) - ‘redis-6.0.8.tar.gz’ saved [2247528/2247528]
+```
+
+```
+kartheek@SAILS-DM87:~$ ls
+brand        file1.txt  file3.txt  gsdd                  redis-6.0.8.tar.gz  sample.tar.gz  twogb.txt
+destination  file2.txt  first      redirection_file.txt  road_not_taken.txt  source
+kartheek@SAILS-DM87:~$                           
+```
 
