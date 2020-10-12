@@ -227,7 +227,6 @@ kartheek@SAILS-DM87:~$ ls -l brand
 lrwxrwxrwx 1 kartheek kartheek 98 Oct 12 20:10 brand -> /home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs/brand_drugs.txt
 kartheek@SAILS-DM87:~$  
 ```
-
 ```
 kartheek@SAILS-DM87:~$ ls
 brand  destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
@@ -236,7 +235,6 @@ This is sample file
 Symbolic link works fine
 kartheek@SAILS-DM87:~$
 ```
-
 ### In order to delete the Symlink we need to used this command
 
 ```
@@ -247,7 +245,6 @@ kartheek@SAILS-DM87:~$ ls
 destination  file1.txt  file2.txt  file3.txt  gsdd  redirection_file.txt  source
 kartheek@SAILS-DM87:~$
 ```
-
 
 ### Now we will create Symlink to a directory: We have sample directory in this location "/home/kartheek/source/gsdd/medguides/generic_medguides/brand_medguides/brand_drugs" and we will create Symlink.
 
