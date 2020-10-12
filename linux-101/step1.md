@@ -364,3 +364,32 @@ kartheek@SAILS-DM87:~/source$ ls
 first  first.zip  gsdd  sampl1.txt  sampl2.txt
 kartheek@SAILS-DM87:~/source$     
 ```
+
+### 14.grep command in Linux: grep stands for globally search for regular expression and print out.The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
+### Syntax: grep [options] pattern [files] and some of the options description are shown below.
+- -c : This prints only a count of the lines that match a pattern
+- -n : Display the matched lines and their line numbers.
+- -v : This prints out all the lines that do not matches the pattern
+- -w : Match whole word
+
+```
+kartheek@SAILS-DM87:~$ grep -c "road" road_not_taken.txt
+2
+```
+```
+kartheek@SAILS-DM87:~$ grep -o "road" road_not_taken.txt
+road
+road
+```
+```
+kartheek@SAILS-DM87:~$ grep -n "road" road_not_taken.txt
+1:Two roads diverged in a yellow wood,
+21:Two roads diverged in a wood, and I—
+```
+```
+kartheek@SAILS-DM87:~$ grep -h "road" road_not_taken.txt
+Two roads diverged in a yellow wood,
+Two roads diverged in a wood, and I—
+kartheek@SAILS-DM87:~$                                                                                       ```                              
+
+
